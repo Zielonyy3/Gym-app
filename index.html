@@ -5,10 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/781114e967.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <ul class="menuList">
+                <li><a href="#">Plany</a></li>
+                <li><a href="#">Empty</a></li>
+                <li><a href="#" class="addPlanButton">Dodaj plan</a></li>
+                <li><a href="#">Empty</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="navHolder">
+            <div class="nav navHidden">
+                <div class="plan">Plan A</div>
+                <div class="plan">Plan B</div>
+            </div>
+            <div class="content">
+                <!-- <div class="exerciseCard">
+                    <div class="exerciseCardHeader">
+                        <h2 class="title">Wyciskanie na ławce poziomej</h2>
+                        <div class="result green">25kg</div>
+                        <div class="result red">23kg</div>
+                        <div class="result green">24kg</div>
+                    </div>
+                    <div class="exerciseCardContent">
 
+                    </div>
+                </div> -->
+
+                <div class="addExercise">
+                    <input type="text" name="addExercise" id="addExerciseInput" placeholder="Nazwa ćwiczenia">
+                    <i class="addExercisePlus fas fa-plus-square"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="addPlanForm hidden">
+        <form action="#">
+            <input type="text" name="planName" id="planName" placeholder="Nazwa planu">
+            <div class="middleForm">
+                <div class="selectDays">
+                    <h3>Dni tygodnia</h3>
+                    <ul>
+                        <li><Label><input type="checkbox" name="poniedziałek" id="monday">Poniedziałek</Label></li>
+                        <li><Label><input type="checkbox" name="wtorek" id="tuesday">Wtorek</Label></li>
+                        <li></li><Label><input type="checkbox" name="sroda" id="wednesday">Środa</Label>
+                        </li>
+                        <li><Label><input type="checkbox" name="czwartek" id="thursday">Czwartek</Label>
+                        </li>
+                        <li><Label><input type="checkbox" name="piataek" id="friday">Piątek</Label>
+                        </li>
+                        <li><Label><input type="checkbox" name="sobota" id="saturday">Sobota</Label>
+                        </li>
+                        <li><Label><input type="checkbox" name="niedziela" id="sunday">Niedziela</Label>
+                        </li>
+                        <li><Label><input type="checkbox" name="all" id="all">Wszystkie</Label></li>
+                    </ul>
+                </div>
+                <textarea name="planDescripition" id="planDescripition" cols="30" rows="10"></textarea>
+            </div>
+            <button id="addPlanButton">Dodaj</button>
+        </form>
+    </div>
 </body>
 
 </html>

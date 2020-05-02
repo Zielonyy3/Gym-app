@@ -1,0 +1,241 @@
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+</style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #ddd;
+    min-height: 60vh;
+}
+
+.header {
+    width: 100%;
+}
+
+.menuList {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuList li {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.menuList a {
+    display: block;
+    padding: 40px 5px;
+    background-color: aquamarine;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.menuList a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.menuList .addPlanButton:hover {
+    background-color: red;
+}
+
+.navHolder {
+    display: flex;
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    flex-grow: 0;
+    width: 20%;
+    background-color: blueviolet;
+}
+
+.navHidden {
+    width: 0;
+}
+
+.navHidden .plan {
+    display: none;
+}
+
+.plan {
+    width: 80%;
+    padding: 30px 5px;
+    background-color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    cursor: pointer;
+    flex-shrink: ;
+}
+
+.plan:hover {
+    background-color: #aaa;
+}
+
+.content {
+    padding: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 530px;
+}
+
+.addPlanForm {
+    position: fixed;
+    display: flex;
+    flex-flow: column row;
+    width: 60%;
+    border: 2px solid #555;
+    /* border-radius: 10px; */
+    background-color: #fff;
+    min-height: 60%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 20px 30px;
+
+}
+
+.addPlanForm form {
+    width: 100%;
+}
+
+#planName {
+    padding: 20px 20px;
+    width: 50%;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+
+
+#planName {
+    padding: 15px 10px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.middleForm {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.selectDays {
+    width: 30%;
+    margin-right: 10px;
+    border: 1px solid #555;
+    min-width: 180px;
+    flex-shrink: 0;
+}
+
+.selectDays h2 {
+    width: 100%;
+    float: left;
+}
+
+.selectDays ul {
+    padding-left: 20px;
+    margin: 0 0 30px;
+    text-align: left;
+    list-style-type: none;
+    float: left;
+}
+
+.selectDays ul li {
+    margin: 0.2em 0;
+}
+
+.selectDays ul li:nth-last-child(1) {
+    margin: 0.4 em 0;
+}
+
+.selectDays input[type="checkbox"] {
+    margin-right: 0.6em;
+}
+
+#planDescripition {
+    padding: 1.5em 1em;
+    width: 60%;
+    border: 1px solid #555;
+    font-size: 18px;
+    flex-shrink: 1;
+}
+
+#addPlanButton {
+    padding: 20px 80px;
+    border: 1px solid #555;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+.hidden {
+    display: none;
+}
+
+.addExercise {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    border: 1px solid #555;
+    background-color: #fff;
+    margin-bottom: 1.5em;
+}
+
+.addExercise input {
+    height: 96%;
+    width: 70%;
+    border: 0;
+    padding-left: .8em;
+    font-size: 23px;
+    min-width: 40%;
+    flex-shrink: 1;
+}
+
+.addExercise input:focus {
+    outline: none;
+    flex-shrink: 0;
+}
+
+.addExercisePlus {
+    margin-right: .6em;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.addExercisePlus:hover {
+    color: red;
+}
