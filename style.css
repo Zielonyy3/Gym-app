@@ -1,6 +1,6 @@
-<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
-</style>* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -86,7 +86,6 @@ html {
     text-transform: uppercase;
     margin: 30px 0 0;
     cursor: pointer;
-    flex-shrink: ;
 }
 
 .plan:hover {
@@ -238,4 +237,103 @@ html {
 
 .addExercisePlus:hover {
     color: red;
+}
+
+.exerciseCard {
+    width: 90%;
+}
+
+.exerciseCardHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #555;
+    padding-left: 1em;
+    height: 50px;
+}
+
+.exerciseTitle {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.result {
+    width: 70px;
+    padding: 7px 0;
+    text-align: center;
+    background-color: #66ca66;
+    border: 2px solid #1d4f1d;
+    margin: 0 10px;
+}
+
+.exerciseCardHeader .listDown {
+    margin-left: 0.8em;
+    margin-right: .8em;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.exerciseCardHeader .listDown:hover {
+    color: red;
+}
+
+
+.result {
+    flex-shrink: 1;
+}
+
+.exerciseCardContent {
+    background-color: #fff;
+    padding: 2em;
+    height: 600px;
+    overflow: hidden;
+}
+
+.exerciseFirstRow {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    /* align-items: flex-end; */
+    height: 50%;
+}
+
+.exerciseFirstRow img {
+    width: 350px;
+    height: auto;
+}
+
+.exerciseInput {
+    width: 20%;
+    font-size: 20px;
+    padding: .8em 0.8em;
+    margin: .6em 0;
+    flex-grow: 1;
+}
+
+#exerciseDescription {
+    width: 35%;
+    margin-right: -70px;
+}
+
+.addSeries {
+    width: 200px;
+    height: 50px;
+    margin: 40px 0 0 190px;
+}
+
+.exerciseSecondRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 2em;
+    height: 50%;
+}
+
+.exerciseSecondRow .result {
+    margin: .5em .2em;
 }
