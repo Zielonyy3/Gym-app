@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 class Application {
     constructor() {}
 }
@@ -55,4 +53,3 @@ class Plans {
 
 const app = new Application();
 const plan = new Plans();
->>>>>>> 4bdbd65... Add interaection with "add plan" button

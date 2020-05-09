@@ -7,15 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/781114e967.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
             <ul class="menuList">
-                <li><a href="#">Plany</a></li>
+                <li><a href="#" class="plansListButton">Plany</a></li>
                 <li><a href="#">Empty</a></li>
-                <li><a href="#" class="addPlanButton">Dodaj plan</a></li>
+                <li><a href="#" data-active=1 class="addPlanButton">Dodaj plan</a></li>
                 <li><a href="#">Empty</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
@@ -38,12 +39,16 @@
 
                         <div class="exerciseFirstRow">
                             <img src="img/exerciseSample.jpg" alt="">
-                            <input type="number" class="exerciseInput" name="weight" placeholder="Ciężar">
-                            <input type="number" class="exerciseInput" name="reps" placeholder="Liczba powtórzeń">
-                            <input type="number" class="exerciseInput" name="series" placeholder="Liczba serii">
-                            <textarea name="exerciseDescription" id="exerciseDescription" cols="30" rows="10"
-                                placeholder="Opis"></textarea>
-                            <button class="addSeries">Dodaj</button>
+                            <div>
+                                <input type="number" class="exerciseInput" name="weight" placeholder="Ciężar">
+                                <input type="number" class="exerciseInput" name="reps" placeholder="Liczba powtórzeń">
+                                <input type="number" class="exerciseInput" name="series" placeholder="Liczba serii">
+                            </div>
+                            <div>
+                                <textarea name="exerciseDescription" id="exerciseDescription" cols="30" rows="9"
+                                    placeholder="Opis"></textarea>
+                                <button class="addSeries">Dodaj</button>
+                            </div>
                         </div>
 
                         <div class="exerciseSecondRow">
@@ -95,8 +100,7 @@
         </div>
     </div>
 
-
-    <div class="addPlanForm hidden">
+    <div data-show=0 class="addPlanForm addPlanFormHidden">
         <form action="#">
             <input type="text" name="planName" id="planName" placeholder="Nazwa planu">
             <div class="middleForm">
@@ -109,7 +113,7 @@
                         </li>
                         <li><Label><input type="checkbox" name="czwartek" id="thursday">Czwartek</Label>
                         </li>
-                        <li><Label><input type="checkbox" name="piataek" id="friday">Piątek</Label>
+                        <li><Label><input type="checkbox" name="piatek" id="friday">Piątek</Label>
                         </li>
                         <li><Label><input type="checkbox" name="sobota" id="saturday">Sobota</Label>
                         </li>
@@ -123,6 +127,8 @@
             <button id="addPlanButton">Dodaj</button>
         </form>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
