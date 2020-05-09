@@ -122,6 +122,7 @@ html {
     text-align: center;
     padding: 10px 20px 30px;
     transition: .3s;
+    z-index: 1;
 }
 
 .addPlanFormHidden {
@@ -306,7 +307,7 @@ html {
 }
 
 .exerciseFirstRow {
-    /* display: none; */
+    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
@@ -370,4 +371,15 @@ html {
 
 .exerciseSecondRow .result {
     margin: .5em .2em;
+}
+
+.focus {
+    border: 2px solid red;
+}
+
+.blurContainer {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
